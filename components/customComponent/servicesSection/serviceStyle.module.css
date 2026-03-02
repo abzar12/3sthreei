@@ -1,0 +1,58 @@
+@reference 'tailwindcss';
+
+.container {
+    @apply w-full px-5 text-center my-5
+}
+
+.container .title {
+    @apply mb-5
+}
+
+.cards {
+    @apply flex flex-wrap md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 justify-evenly items-center
+}
+
+.cards .card {
+    @apply bg-(--card-bg-color) rounded-md md:rounded-xl p-3 md:px-5 md:py-3
+}
+
+.cards .card .card_title {
+    @apply text-2xl text-(--nav-text-color) font-bold font-[merriweather]
+}
+
+.cards .card .card_subtitle {
+    @apply text-sm font-semibold
+}
+
+.content {
+    @apply pl-3 mt-3
+}
+
+.content_text {
+    @apply text-left mb-2 text-[1rem] font-[--text-font] ml-1 relative
+}
+
+.content_text::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--nav-bg-color);
+    border-radius: 10px;
+    background-color: var(--nav-bg-color);
+    animation: Opacity 1s infinite alternate ease-out;
+}
+
+@keyframes Opacity {
+    0% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.5);
+    }
+}
