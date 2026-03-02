@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @import "tailwindcss";
 /* @import "tw-animate-css"; */
 @import "shadcn/tailwind.css";
 
-:root{
+.roote3{
   --nav-bg-color: rgb(126, 34, 206);
   --nav-text-color: rgb(126, 34, 206);
-  --nav-text-color-hover: rgb(255,255,255);
-  --theme-btn-color: rgb(126, 34, 206);
-  --theme-btn-color2: rgb(255,255,255);
+  --nav-text-color-hover: rgb(255, 255, 255);
+  /* --theme-btn-color: rgb(126, 34, 206);
+  --theme-btn-color2: rgb(255,255,255); */
+  /* --btn-color-hover: rgb(255,255,255); */
+  --bg-hero-color1: rgb(17, 24, 39);
+  --bg-hero-color2: rgb(15, 23, 42);
+  --text-color: rgb(255, 255, 255);
+  /* text color*/
+  --text-font: 'Merriweather';
+  --bg-color: rgb(17, 24, 39);
+  /* background color*/
+  --card-bg-color: rgb(30, 41, 59);
+  /* card color*/
+}
+
+:root {
+  --nav-bg-color: rgb(97, 218, 251);
+  --nav-text-color: rgb(97, 218, 251);
+  --nav-text-color-hover: rgb(255, 255, 255);
+  --bg-hero-color1: rgb(17, 24, 39);
+  --bg-hero-color2: rgb(15, 23, 42);
+  --text-color: rgb(255, 255, 255);
+  /* text color*/
+  --bg-color: rgb(17, 24, 39);
+  /* background color*/
+  --card-bg-color: rgb(30, 41, 59);
+  /* card color*/
+}
+
+body {
+  @apply bg-(--bg-color) text-(--text-color)
 }

@@ -34,5 +34,11 @@
         "blog": "Blog",
         "faq": "FAQ",
         "about": "About Us"
+    },
+    "hero":{
+        "headline": "From Idea to Launch — We Build & Teach Digital Excellence",
+        "subheadline": "Enterprise websites, Mobile apps, Games, UI/UX design. while teaching your team how to scale them.",
+        "herobtn1" :"Start Your Project",
+        "herobtn2" :"Explore Courses"
     }
 }
