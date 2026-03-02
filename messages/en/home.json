@@ -1,0 +1,54 @@
+{
+    "hero": {
+        "headline": "From Idea to Launch — We Build & Teach Digital Excellence",
+        "subheadline": "Enterprise websites, Mobile apps, Games, UI/UX design. while teaching your team how to scale them.",
+        "herobtn1": "Start Your Project",
+        "herobtn2": "Explore Courses"
+    },
+    "serviceSection": {
+        "website": {
+            "title": "Website",
+            "subtitle": "High-performing websites built for impact.",
+             "contents": [
+                "Custom Business Websites",
+                "E-commerce Solutions",
+                "SaaS Platforms",
+                "SEO Optimized",
+                "Fast & Secure"
+            ]
+        },
+        "mobile": {
+            "title": "Mobile Apps",
+            "subtitle": "iOS & Android apps built to grow your business.",
+             "contents": [
+                "Native & Cross-Platform Apps",
+                "UI/UX Optimized",
+                "API Integration",
+                "API Integration",
+                "Ongoing Maintenance"
+            ]
+        },
+        "game": {
+            "title": "Game Apps",
+            "subtitle": "Interactive experiences that engage users.",
+            "contents": [
+                "Unity / Unreal Development",
+                "Multiplayer Features",
+                "In-App Monetization",
+                "Game UI/UX Design",
+                "Publishing Support"
+            ]
+        },
+        "design": {
+            "title": "UI/UX",
+            "subtitle": "Clean, user-friendly designs that build trust.",
+            "contents": [
+                "App & Web UI/UX",
+                "Logo & Branding",
+                "Product Design",
+                "Prototyping (Figma)",
+                "Marketing Visuals"
+            ]
+        }
+    }
+}

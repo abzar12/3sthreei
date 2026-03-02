@@ -1,3 +1,54 @@
 {
- 
+    "hero": {
+        "headline": "De l’idée au lancement — Nous créons et enseignons l’excellence digitale",
+        "subheadline": "Sites web d’entreprise, applications mobiles, jeux, design UI/UX — tout en formant votre équipe à les développer et les faire évoluer.",
+        "herobtn1": "Lancer votre projet",
+        "herobtn2": "Découvrir nos formations"
+    },
+    "serviceSection": {
+        "website": {
+            "title": "Site Web",
+            "subtitle": "Des sites web modernes et performants pour valoriser votre présence en ligne.",
+            "contents": [
+                "Sites web professionnels sur mesure",
+                "Solutions e-commerce",
+                "Plateformes SaaS",
+                "Optimisation SEO",
+                "Rapide et sécurisé"
+            ]
+        },
+        "mobile": {
+            "title": "Applications Mobiles",
+            "subtitle": "Applications iOS et Android pour pour développer votre activité.",
+            "contents": [
+                "Applications natives et multiplateformes",
+                "UI/UX optimisée",
+                "Intégration d’API",
+                "Connexion aux services externes",
+                "Maintenance continue"
+            ]
+        },
+        "game": {
+            "title": "Jeux Vidéo",
+            "subtitle": "Des expériences interactives qui captivent les utilisateurs.",
+            "contents": [
+                "Développement Unity / Unreal",
+                "Fonctionnalités multijoueur",
+                "Monétisation intégrée",
+                "Design UI/UX pour jeux",
+                "Support à la publication"
+            ]
+        },
+        "design": {
+            "title": "UI/UX",
+            "subtitle": "Des interfaces claires et intuitives pour une meilleure expérience utilisateur.",
+            "contents": [
+                "UI/UX pour applications et sites web",
+                "Création de logo et identité visuelle",
+                "Design produit",
+                "Prototypage (Figma)",
+                "Supports visuels marketing"
+            ]
+        }
+    }
 }
