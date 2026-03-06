@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  height: 200vh;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+}
