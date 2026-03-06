@@ -5,7 +5,7 @@
 }
 
 .container .title {
-    @apply mb-5
+    @apply mb-5 text-2xl opacity-20 text-(--nav-text-color)
 }
 
 .cards {
@@ -13,7 +13,7 @@
 }
 
 .cards .card {
-    @apply bg-(--card-bg-color) rounded-md md:rounded-xl p-3 md:px-5 md:py-3
+    @apply bg-(--card-bg-color) rounded-md md:rounded-xl p-3 md:px-5 md:py-3 max-w-[300px] mx-auto h-[330px] relative
 }
 
 .cards .card .card_title {
@@ -55,4 +55,8 @@
         opacity: 0.3;
         transform: scale(0.5);
     }
+}
+
+.card .btn .Link{
+    @apply  py-2 rounded-md text-(--nav-text-color) hover:text-white transition duration-500 ease-out absolute bottom-3 left-24 right-24 font-bold
 }

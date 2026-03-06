@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 //  -----------Our import 
 import Hero from '../assets/hero/hero';
 import OurService from '@/components/customComponent/servicesSection/services';
+import WorkingWith from '@/components/customComponent/WorkingWith/WorkingWith';
+import WhyChooseUs from '@/components/customComponent/WhyChoose/chooseUs';
 
 type Props = {
   params: { locale: string };
@@ -41,6 +43,18 @@ export default async function MarketingPage() {
       <section>
         <OurService />
       </section>
+      {/*---------------------------- We work with us Section ---------------------------- */}
+      <section>
+        <WorkingWith />
+      </section>
+       {/*---------------------------- why choose us Section ---------------------------- */}
+       <section >
+        {/* <WhyChooseUs /> */}
+       </section>
+       {/*---------------------------- why choose us Section ---------------------------- */}
+       <section>
+        
+       </section>
     </main>
   );
 }

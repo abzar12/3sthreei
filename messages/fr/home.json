@@ -15,7 +15,8 @@
                 "Plateformes SaaS",
                 "Optimisation SEO",
                 "Rapide et sécurisé"
-            ]
+            ],
+            "button": "Voir plus"
         },
         "mobile": {
             "title": "Applications Mobiles",
@@ -26,7 +27,8 @@
                 "Intégration d’API",
                 "Connexion aux services externes",
                 "Maintenance continue"
-            ]
+            ],
+            "button": "Voir plus"
         },
         "game": {
             "title": "Jeux Vidéo",
@@ -37,7 +39,8 @@
                 "Monétisation intégrée",
                 "Design UI/UX pour jeux",
                 "Support à la publication"
-            ]
+            ],
+            "button": "Voir plus"
         },
         "design": {
             "title": "UI/UX",
@@ -48,7 +51,68 @@
                 "Design produit",
                 "Prototypage (Figma)",
                 "Supports visuels marketing"
-            ]
+            ],
+            "button": "Voir plus"
         }
-    }
+    },
+    "workingWith": {
+        "individual": {
+            "title": "Individual",
+            "contents": [
+                "Développement de MVP",
+                "Validation produit et conseil technique",
+                "Prototypage rapide (UI/UX et fonctionnel)",
+                "Architecture backend évolutive",
+                "Systèmes d’authentification sécurisés",
+                "Infrastructure prête pour le cloud",
+                "Planification de feuille de route technique",
+                "Support et mise à l’échelle après lancement"
+            ],
+            "button": "Testez gratuitement la vitesse de votre site"
+        },
+        "entreprise": {
+            "title": "Entreprise",
+            "contents": [
+                "Équipes dédiées et pluridisciplinaires",
+                "Architecture système de niveau entreprise",
+                "Contrôle d’accès basé sur les rôles (RBAC)",
+                "Protection avancée des données et chiffrement",
+                "NDA et confidentialité stricte",
+                "Développement conforme aux standards",
+                "Intégration DevOps et pipelines CI/CD",
+                "Maintenance à long terme et support SLA"
+            ],
+            "button": "Audit complet et optimisation gratuite"
+        }
+    },
+    "whyChooseUs": [
+        {
+            "headText": "Partenaire Numérique Tout-en-Un",
+            "text": "Web, applications, jeux et design — tout sous un même toit."
+        },
+        {
+            "headText": "Équipe d’Experts",
+            "text": "Des développeurs et designers expérimentés offrant des solutions numériques de haute qualité."
+        },
+        {
+            "headText": "Communication Transparente",
+            "text": "Mises à jour régulières et tarification claire — aucune surprise."
+        },
+        {
+            "headText": "Support Continu",
+            "text": "Nous restons à vos côtés après le lancement pour les mises à jour, la maintenance et la croissance."
+        },
+        {
+            "headText": "Sécurité de Niveau Entreprise",
+            "text": "Nous appliquons des normes de sécurité modernes pour protéger votre plateforme, vos utilisateurs et vos données."
+        },
+        {
+            "headText": "Protection Avancée contre les Menaces",
+            "text": "Surveillance continue, authentification sécurisée et protection contre les cybermenaces modernes."
+        },
+        {
+            "headText": "Protection Fiable des Données",
+            "text": "Sauvegardes sécurisées, chiffrement et meilleures pratiques pour protéger vos données."
+        }
+    ]
 }
