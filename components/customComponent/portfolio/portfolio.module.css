@@ -1,0 +1,41 @@
+@reference "tailwindcss";
+
+.container{
+    @apply w-full px-5 text-center my-10
+}
+.container .title {
+    @apply mb-5 text-2xl opacity-20 text-(--nav-text-color)
+}
+.cards{
+    @apply flex justify-around flex-wrap gap-7
+}
+.card{
+    @apply relative z-0 transition duration-300 ease-linear w-[350px] h-[200px] overflow-hidden rounded-sm
+}
+.card .img{
+     @apply w-full h-full transition duration-300 ease-linear rounded-sm
+}
+.card:hover .img{
+    transform: scale(1.2); 
+}
+.card .background{
+    @apply absolute w-full h-full bg-transparent z-10 top-0 cursor-pointer rounded-sm content-center
+}
+.card:hover .background{
+    @apply  bg-gray-300/30 
+}
+
+.skeleton {
+  height: 200px;
+  width: 350px;
+  background: linear-gradient(90deg,#d4d3d3,#e9e7e7,#d4d3d3);
+  animation: loading 2s infinite;
+}
+@keyframes loading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
