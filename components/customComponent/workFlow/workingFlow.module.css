@@ -36,19 +36,22 @@
     @apply my-22 
 }
 .card_header{
-    @apply w-[600px] flex mx-auto justify-around 
+    @apply max-w-[750px] flex flex-wrap gap-5 mx-auto justify-around 
 }
 .card_header .headText{
     @apply  border-2 border-(--nav-bg-color)/20  text-(--nav-text-color)  rounded-full px-5 py-2 hover:border-(--nav-bg-color) transition-all duration-300 ease-in cursor-pointer relative
 }
 .card_header .headText.active{
-    @apply  font-bold rounded-full px-5 py-2 border-(--nav-bg-color) 
+    @apply  font-bold rounded-full px-5 py-2 border-(--nav-bg-color)
 }
 .cards{
-    @apply flex flex-wrap justify-center gap-5 md:gap-7 my-5
+    @apply flex flex-wrap justify-center gap-3 md:gap-7 my-5
 }
 .cards .card {
-    @apply  bg-(--card-bg-color-deep) shadow-[-2px_2px_5px_2px_var(--card-bg-color-deep)] border border-transparent relative text-white/90 font-extrabold rounded-lg md:rounded-xl  md:px-5 md:py-3 h-120 transition duration-500 ease-out
+    @apply  bg-(--card-bg-color-deep) px-3 pt-3 w-[270px] shadow-[-2px_2px_5px_2px_var(--card-bg-color-deep)] border border-transparent relative text-white/90 font-extrabold rounded-lg md:rounded-xl  md:px-5 md:py-3 h-120 transition duration-500 ease-out
+}
+.cards .card.cardActive{
+    @apply bg-transparent
 }
 .cards .card:hover {
    @apply bg-transparent 
@@ -84,4 +87,12 @@
 }
 .content_text .icon{
     @apply text-(--nav-text-color) mt-1 text-[1rem]
+}
+@media (max-width:546px ){
+.cards .card.cardActive{
+    @apply block bg-(--card-bg-color-deep)
+}
+.cards .card{
+    @apply hidden
+}
 }
