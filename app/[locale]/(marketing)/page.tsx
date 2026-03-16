@@ -3,9 +3,10 @@ import { Metadata } from 'next';
 //  -----------Our import 
 import Hero from '../assets/hero/hero';
 import OurService from '@/components/customComponent/servicesSection/services';
-import WorkingWith from '@/components/customComponent/WorkingWith/WorkingWith';
-import WhyChooseUs from '@/components/customComponent/WhyChoose/chooseUs';
+import WorkingWith from '@/components/customComponent/workingWith/workingWith';
+import WhyChooseUs from '@/components/customComponent/whyChoose/chooseUs';
 import WorkingFlow from '@/components/customComponent/workFlow/workingFlow';
+import Portfolio from '@/components/customComponent/portfolio/portfolio';
 
 type Props = {
   params: { locale: string };
@@ -55,6 +56,10 @@ export default async function MarketingPage() {
        {/*---------------------------- WorkFlow Section ---------------------------- */}
        <section>
         <WorkingFlow />
+       </section>
+       {/*---------------------------- WorkFlow Section ---------------------------- */}
+       <section>
+        <Portfolio />
        </section>
     </main>
   );
