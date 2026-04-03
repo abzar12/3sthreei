@@ -19,18 +19,27 @@
     transform: scale(1.2); 
 }
 .card .background{
-    @apply absolute w-full h-full bg-transparent z-10 top-0 cursor-pointer rounded-sm content-center
+    @apply absolute hidden w-full h-full bg-transparent z-10 top-0 cursor-pointer rounded-sm content-center
 }
 .card:hover .background{
-    @apply  bg-gray-300/30 
+    @apply  bg-gray-300/30 block
 }
-
+.icon{
+    @apply ml-[150px] text-5xl 
+}
+.card:hover .icon{
+    @apply ml-[150px] text-5xl 
+}
+.background .bgText{
+    @apply absolute bottom-5 left-3 right-3
+}
 .skeleton {
   height: 200px;
   width: 350px;
   background: linear-gradient(90deg,#d4d3d3,#e9e7e7,#d4d3d3);
   animation: loading 2s infinite;
 }
+
 @keyframes loading {
   0% {
     background-position: -200px 0;
