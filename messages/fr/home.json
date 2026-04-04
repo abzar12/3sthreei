@@ -282,7 +282,7 @@
             "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         },
-         {
+        {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
@@ -292,5 +292,35 @@
             "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         }
+    ],
+    "process": [
+        {
+        "title": "Découverte & Alignement",
+        "content": "Réunion de kickoff pour comprendre votre vision, vos objectifs business, les besoins de votre audience et ce que le succès signifie pour vous. Via des ateliers et recherches ciblés, nous cartographions les opportunités et définissons une direction claire."
+    },
+    {
+        "title": "Planification & Stratégie",
+        "content": "Nous transformons votre vision en un plan concret : fonctionnalités, parcours utilisateur, architecture technique et planning. Des wireframes précoces nous permettent de tester et valider les idées rapidement."
+    },
+    {
+        "title": "Conception & Prototypage",
+        "content": "Votre produit prend vie visuellement et émotionnellement. Nous créons des interfaces intuitives et des prototypes interactifs, qu’il s’agisse d’un dashboard, d’une app mobile, d’un système visuel ou d’un univers de jeu."
+    },
+    {
+        "title": "Développement & Élan",
+        "content": "Nous construisons en sprints efficaces avec un code propre et évolutif. Vous suivez l’avancement en direct, donnez votre feedback et voyez le produit prendre forme rapidement."
+    },
+    {
+        "title": "Tests & Assurance Qualité",
+        "content": "Nous réalisons des tests complets : fonctionnalité, performance, sécurité et retours utilisateurs. Pour les jeux, nous organisons des playtests pour perfectionner l’équilibre et le plaisir."
+    },
+    {
+        "title": "Lancement & Déploiement",
+        "content": "Déploiement fluide sur serveurs et stores, monitoring et formation complète de votre équipe. Nous restons à vos côtés pour un lancement réussi."
+    },
+    {
+        "title": "Élan & Partenariat",
+        "content": "Après le lancement, nous vous accompagnons 30–90 jours avec support gratuit, maintenance, suivi de performance et améliorations continues."
+    }
     ]
 }
