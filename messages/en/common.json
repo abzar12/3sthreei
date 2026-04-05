@@ -1,9 +1,9 @@
 {
     "common": {
-        "title": "Welcome to 3SThreeA",
+        "title": "Welcome to 3SThreeI",
         "description": "Build apps, games, web apps, and learn with us.",
         "keywords": [
-            "3SThreeA",
+            "3SThreeI",
             "SaaS platform",
             "app development",
             "game development",
@@ -12,7 +12,7 @@
             "tech courses",
             "software solutions"
         ],
-        "sitename": "3SThreeA"
+        "sitename": "3SThreeI"
     },
     "courses": {
         "title": "Courses",
