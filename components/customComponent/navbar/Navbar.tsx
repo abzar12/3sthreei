@@ -1,16 +1,19 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { getLocale } from "next-intl/server";
-import SwitchButtonTheme from "../ui/customButton/switchLang";
+import SwitchButtonTheme from "../../ui/customButton/switchLang";
+import PhoneNavbar from "./PhonNavbar";
+import style from "./navbar.module.css"
 export default async function Navbar() {
     const t = await getTranslations('navbar')
     const locale = await getLocale()
     return (
-        <nav className="flex justify-around px-5 py-2">
+        <nav className={style.nav}>
             <div className="py-2">
-                <h1>My Logo</h1>
+                <h1>3SThreeI</h1>
             </div>
-            <ul className="flex justify-between gap-5 border border-(--nav-bg-color) text-(--nav-text-color) px-5 py-2 rounded-full ">
+            {/* -------------------------- huge screee */}
+            <ul className={style.navlink}>
                 <li> <Link href='/home'>{t('home')}</Link></li>
                 <li> <Link href='/courses'>{t('course')}</Link></li>
                 <li> <Link href='/projects'>{t('project')}</Link></li>
@@ -19,13 +22,14 @@ export default async function Navbar() {
                 <li> <Link href='/blog'>{t('blog')}</Link></li>
                 <li> <Link href='/blog'>{t('signin')}</Link></li>
             </ul>
-            <div className="pt-3 text-center flex gap-5">
+            {/* -------------------------- small screen */}
+            <div className={style.button}>
                 {/* button for theme */}
-                <SwitchButtonTheme locale= {locale} />
+                <SwitchButtonTheme locale={locale} />
                 {/* button to switch language  */}
-                <div className="border h-5 w-14">
-
-                </div>
+                {/* <div className="border h-5 w-14">
+                </div> */}
+                <PhoneNavbar home={t('home')} course={t('course')} project={t('project')} about={t('about')} faq={t('faq')} blog={t('blog')} signin={t('signin')} />
             </div>
         </nav>
     );

@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+
+.nav{
+    @apply flex justify-between px-5 py-2 relative font-[open+sans]
+}
+.navlink{
+    @apply flex justify-between gap-5 border border-(--nav-bg-color) text-(--nav-text-color) px-5 py-2 rounded-full 
+}
+.PhoneNav{
+    @apply hidden flex 
+}
+.button{
+    @apply pt-3 text-center flex gap-5
+}
+/* -----------------phone view */
+.btnMenu{
+    @apply flex items-center justify-center text-xl cursor-pointer text-[var(--nav-text-color)] hover:opacity-80 transition duration-200 ease-in-out
+}
+.PhoneNavlink{
+    @apply absolute z-50 top-15 left-0 right-0 text-[var(--nav-text-color)]  font-bold  bg-[var(--card-bg-color)] space-y-3 py-5 w-0 opacity-0 h-0 overflow-hidden transition duration-300 ease-in
+}
+.PhoneNavlink li{
+    /* @apply  */
+}
+.PhoneNavlink.active{
+    @apply h-auto opacity-100 w-full
+}
+@media(max-width:670px){
+.navlink{
+    @apply hidden
+}
+.PhoneNav{
+    @apply block
+}
+}

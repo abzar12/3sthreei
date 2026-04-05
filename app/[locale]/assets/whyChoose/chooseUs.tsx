@@ -3,7 +3,6 @@ import style from "./chooseUs.module.css"
 import { useTranslations } from "next-intl";
 import { useScroll, motion, useTransform } from "framer-motion";
 import { useRef } from "react"
-import Progress from "./progress";
 type WhyChooseUsItems = {
     headText: string,
     text: string

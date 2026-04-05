@@ -7,9 +7,9 @@ import { routing } from "@/i18n/routing";
 // ---------------end of next-intl
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import '../globals.css'
+import "../globals.css"
 import React from "react";
-import Navbar from "@/components/customComponent/Navbar";
+import Navbar from "@/components/customComponent/navbar/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

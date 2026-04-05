@@ -2,12 +2,12 @@ import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 //  -----------Our import 
 import Hero from '../assets/hero/hero';
-import OurService from '@/components/customComponent/servicesSection/services';
-import WorkingWith from '@/components/customComponent/workingWith/workingWith';
-import WhyChooseUs from '@/components/customComponent/whyChoose/chooseUs';
-import WorkingFlow from '@/components/customComponent/workFlow/workingPricing';
-import Portfolio from '@/components/customComponent/portfolio/portfolio';
-import WorkingProcess from '@/components/customComponent/process/process';
+import OurService from '@/app/[locale]/assets/servicesSection/services';
+import WorkingWith from '@/app/[locale]/assets/workingWith/workingWith';
+import WhyChooseUs from '@/app/[locale]/assets/whyChoose/chooseUs';
+import WorkingFlow from '@/app/[locale]/assets/workFlow/workingPricing';
+import Portfolio from '@/app/[locale]/assets/portfolio/portfolio';
+import WorkingProcess from '@/app/[locale]/assets/process/process';
 type Props = {
   params: { locale: string };
 };
