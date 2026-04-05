@@ -14,7 +14,7 @@ export default function PhoneNavbar({home, course, project, about, faq, blog, si
         <div className={style.PhoneNav}>
             <button className={style.btnMenu} onClick={expand}> <FaBars/> </button>
             {
-                <ul className={`${style.PhoneNavlink} ${!is_active && style.active}`}>
+                <ul className={`${style.PhoneNavlink} ${is_active && style.active}`}>
                     <li> <Link href='/'>{home}</Link></li>
                     <li> <Link href='/courses'>{course}</Link></li>
                     <li> <Link href='/projects'>{project}</Link></li>
