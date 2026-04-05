@@ -24,8 +24,8 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL!
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl || ' http://localhost:3000'),
   title: {
-    default: "3SThreeA | Build. Design. Learn.",
-    template: "%s | 3SThreeA",
+    default: "3SThreeI | Build. Design. Learn.",
+    template: "%s | 3SThreeI",
   },
 
   description:
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteUrl,
-    title: "3SThreeA | Build. Design. Learn.",
+    title: "3SThreeI | Build. Design. Learn.",
     description:
       "Apps, games, web solutions, creative design, and tech education — all in one SaaS ecosystem.",
-    siteName: "3SThreeA",
+    siteName: "3SThreeI",
     images: [
       {
         url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "3SThreeA SaaS Platform",
+        alt: "3SThreeI SaaS Platform",
       },
     ],
   },
