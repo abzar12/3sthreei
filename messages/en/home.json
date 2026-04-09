@@ -196,7 +196,7 @@
             "headText": "Business Presence",
             "title": "Starting Price",
             "price": "25 000",
-            "btn" : "Start Project",
+            "btn": "Start Project",
             "content": [
                 "Up to 10 Pages",
                 "Responsive Design",
@@ -210,7 +210,7 @@
         "interactive": {
             "headText": "Interactive",
             "title": "Starting Price",
-            "btn" : "Start Project",
+            "btn": "Start Project",
             "price": "23 000",
             "content": [
                 "Up to 10 Pages",
@@ -239,28 +239,28 @@
             ]
         }
     },
-    "portfolio" :[
+    "portfolio": [
         {
-            "img" : "/project1.png",
-            "alt" : "this project show the portfolio of my work",
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         },
         {
-            "img" : "/project1.png",
-            "alt" : "this project show the portfolio of my work",
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         },
         {
-            "img" : "/project1.png",
-            "alt" : "this project show the portfolio of my work",
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         },
         {
-            "img" : "/project1.png",
-            "alt" : "this project show the portfolio of my work",
+            "img": "/project1.png",
+            "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
         },
-         {
+        {
             "img": "/project1.png",
             "alt": "this project show the portfolio of my work",
             "bgText": "this is the text display for gackground"
@@ -275,7 +275,7 @@
         {
             "title": "Discovery & Alignment",
             "content": "Kickoff meeting to understand your vision, business goals, audience needs, and what true success means for you. Through targeted workshops and sharp research, we map opportunities, study the competition, and lock in a focused direction"
-        }, 
+        },
         {
             "title": "Planning & Strategy",
             "content": "We turn your vision into a concrete plan. We define every feature, user journey, technical backbone, and timeline. Early wireframes let us test ideas quickly and make smart decisions before the real build begins"
@@ -299,6 +299,28 @@
         {
             "title": "Momentum & Partnership",
             "content": "The launch is the start of the real journey. We stay with you 30–90 days free support & maintenance, performance tracking, feature expansions, and continuous improvements helping your product evolve and grow stronger over time"
+        }
+    ],
+    "testimonial": [
+        {
+            "imgUrl": "",
+            "text": "Very easy to use and build my site, The design looks clean and modern. I’m really happy with the result"
+        },
+        {
+            "imgUrl": "",
+            "text": "I created my website in no time, It saved me both time and money.Great experience overall."
+        },
+        {
+            "imgUrl": "",
+            "text": "The tools are simple but powerful, My site works perfectly on all devices.It looks very professional"
+        },
+        {
+            "imgUrl": "",
+            "text": "Smooth and stress-free process, Everything was easy to understand.I’d definitely recommend it"
+        },
+        {
+            "imgUrl": "",
+            "text": "Perfect for beginners like me, No coding skills needed at all. I love my new website"
         }
     ]
 }
