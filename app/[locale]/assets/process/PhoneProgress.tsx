@@ -3,8 +3,10 @@ import style from "./process.module.css"
 import { useTranslations } from "next-intl"
 import { animate, motion, MotionValue, useMotionValue, useMotionValueEvent, useScroll } from "motion/react"
 import { FaLightbulb, FaCode, FaRocket, FaHandshake, FaPencilRuler, FaClipboardList, FaVial } from "react-icons/fa";
-import { useRef } from "react"
+import ArrowDownFn from "./ArrowDownBtn";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, } from "@/components/ui/carousel"
+
+// -------------
 type CardProps = {
     icon: string,
     title: string,
@@ -44,8 +46,13 @@ function PhoneProgress() {
                                     {index === 6 && <FaHandshake className={style.icon} />}
                                 </div>
                                 <h1 className={style.title}> <span className="text-[1.1rem] text-(--nav-text-color) hover:animate-bounce">{index + 1}</span> {item.title}</h1>
-                                <div className={style.content}>
-                                    {item.content}
+                                <div className={`${style.content} ${style.phone}`}  id={`scroll-container${index}`}>
+                                    {/* <div id={`back-section${index}`}></div> */}
+                                    <div>
+                                        <p>{item.content}</p>
+                                        <ArrowDownFn show={`show-section${index}`} contain={`scroll-container${index}`} />
+                                    </div>
+                                    <div id={`show-section${index}`}></div>
                                 </div>
                             </motion.div>
                         </CarouselItem>
