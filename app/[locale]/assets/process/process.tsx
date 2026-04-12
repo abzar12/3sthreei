@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server"
 import { FaLightbulb, FaCode, FaRocket, FaHandshake, FaPencilRuler, FaClipboardList, FaVial } from "react-icons/fa";
 import style from "./process.module.css"
 import PhoneProgress from "./PhoneProgress";
+import ArrowDownFn from "./ArrowDownBtn";
 
 type CardProps = {
     icon: string,
@@ -12,10 +13,12 @@ type CardProps = {
 async function WorkingProcess() {
     const t = await getTranslations()
     const cards = t.raw("process") as CardProps[]
+
+
     return (
         <div className={style.container}>
             <h1 className={style.title}>Our Process</h1>
-            {/* --------------------------tablet and laptop   */}
+            {/* --------------------------tablet and laptop--------------------  */}
             <div className={style.cards}>
                 {
                     cards.map((item, index) => (
@@ -31,8 +34,13 @@ async function WorkingProcess() {
                                     {index === 6 && <FaHandshake className={style.icon} />}
                                 </div>
                                 <h1 className={style.title}> <span className="text-[1.1rem] text-(--nav-text-color) hover:animate-bounce">{index + 1}</span> {item.title}</h1>
-                                <div className={style.content}>
-                                    {item.content}
+                                <div className={style.content} id={`scroll-container${index}`}>
+                                    {/* <div id={`back-section${index}`}></div> */}
+                                    <div className="" >
+                                        <p>{item.content}</p>
+                                        <ArrowDownFn show={`show-section${index}`} contain={`scroll-container${index}`} />
+                                    </div>
+                                    <div id={`show-section${index}`}></div>
                                 </div>
                             </div>
                         </div>
