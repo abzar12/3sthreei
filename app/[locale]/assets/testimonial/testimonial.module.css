@@ -1,0 +1,59 @@
+@reference "tailwindcss";
+
+
+
+.container{
+    @apply my-10 relative px-14
+}
+.logoContainer{
+   @apply relative min-w-[200px] max-w-[400px] mx-auto my-20;
+}
+.container .logo{
+    @apply text-center font-[merriweather] font-bold italic text-(--nav-text-color) text-[2rem] md:text-[2.5rem] relative
+}
+.container .logo::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    height: 5px;
+    width: 70px;
+    background: var(--nav-bg-color);
+}
+.container .logo::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    height: 5px;
+    width: 70px;
+    background: var(--nav-bg-color);
+}
+.logoContainer .subtitle{
+    @apply text-xl text-center tracking-[3px] mb-3
+}
+/* ---------------------------carousel------------------------ */
+.carousel{
+    @apply  max-w-220 min-w-50 mx-auto
+}
+.carousel .cards{
+    @apply relative
+}
+.carousel .carouselItem{
+    @apply w-full sm:basis-1/2 lg:basis-1/3 
+}
+.carouselItem .card{
+    @apply rounded-xl my-5 pt-2 border-l-[5px] ml-3 border-(--nav-bg-color) bg-(--card-bg-color) relative  h-[180px] max-w-[350px] mx-auto
+}
+.carousel .card .contentText{
+    @apply  mb-5 h-25 px-3 text-[1rem]
+}
+.imgContainer{
+    @apply border-t mt-3 px-3 border-white/10 h-[60px] absolute bottom-2 pt-2 w-full flex items-center gap-3 sm:gap-5
+}
+.cardImage{
+    @apply w-10 h-10 bg-white/20 rounded-full bg-cover object-cover
+}
+.UserName{
+    @apply text-sm text-(--nav-text-color) font-bold
+}
