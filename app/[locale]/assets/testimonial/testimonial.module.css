@@ -6,7 +6,7 @@
     @apply my-10 relative px-14
 }
 .logoContainer{
-   @apply relative min-w-[200px] max-w-[400px] mx-auto my-20;
+   @apply relative min-w-[200px] max-w-[430px] mx-auto my-20;
 }
 .container .logo{
     @apply text-center font-[merriweather] font-bold italic text-(--nav-text-color) text-[2rem] md:text-[2.5rem] relative
@@ -30,7 +30,7 @@
     background: var(--nav-bg-color);
 }
 .logoContainer .subtitle{
-    @apply text-xl text-center tracking-[3px] mb-3
+    @apply text-[1.1rem] text-center tracking-[3px] mb-3
 }
 /* ---------------------------carousel------------------------ */
 .carousel{
@@ -56,4 +56,19 @@
 }
 .UserName{
     @apply text-sm text-(--nav-text-color) font-bold
+}
+
+@media (max-width:473px){
+    .container{
+        @apply px-3
+    }
+    .logoContainer{
+        @apply w-full
+    }
+    .logoContainer .subtitle{
+        @apply text-[1rem]
+    }
+    .carousel{
+        @apply mx-10
+    }
 }
