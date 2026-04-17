@@ -1,0 +1,243 @@
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    background: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.playButtonOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.videoWrapper:hover .playButtonOverlay {
+    opacity: 1;
+}
+
+.playButton {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #000;
+}
+
+.playButton:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+.playButton svg {
+    width: 32px;
+    height: 32px;
+}
+
+.controls {
+    background: #1a1a1a;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.progressContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.progressBar {
+    width: 100%;
+    height: 4px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #444;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+.progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: var(--nav-bg-color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+    transition: all 0.2s ease;
+}
+
+.progressBar::-webkit-slider-thumb:hover {
+    background:  var(--nav-bg-color);
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.8);
+}
+
+.progressBar::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: var(--nav-bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+    transition: all 0.2s ease;
+}
+
+.progressBar::-moz-range-thumb:hover {
+    background:  var(--nav-bg-color);
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.8);
+}
+
+.progressBar::-moz-range-track {
+    background: transparent;
+    border: none;
+}
+
+.controlButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.leftControls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    background: rgba(37, 99, 235, 0.3);
+    color: var(--nav-bg-color);
+}
+
+.button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.timeDisplay {
+    color: #999;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+    min-width: 60px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .playButton {
+        width: 60px;
+        height: 60px;
+    }
+
+    .playButton svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .controls {
+        padding: 10px 12px;
+        gap: 10px;
+    }
+
+    .button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .button svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .timeDisplay {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .playButton {
+        width: 50px;
+        height: 50px;
+    }
+
+    .playButton svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .controls {
+        padding: 8px 10px;
+    }
+
+    .controlButtons {
+        flex-wrap: wrap;
+    }
+
+    .button {
+        width: 24px;
+        height: 24px;
+    }
+
+    .button svg {
+        width: 16px;
+        height: 16px;
+    }
+}
