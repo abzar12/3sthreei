@@ -1,17 +1,29 @@
 {
   "common": {
-    "title": "Bienvenue chez 3SThreeI",
-    "description": "Créez des applications, jeux, web apps et apprenez avec nous.",
-    "keywords": [
-      "3SThreeI",
-      "plateforme SaaS",
-      "développement d'applications",
-      "développement de jeux",
-      "développement web",
-      "design UI/UX",
-      "cours en ligne",
-      "solutions logicielles"
-    ],
+    "home": {
+      "title": "Entreprise de développement Web & Mobile au Mali | 3SThreeI",
+      "description": "3SThreeI est une entreprise de développement web et mobile au Mali qui crée des sites web sur mesure, des applications évolutives, des solutions logicielles et un design UI/UX intuitif pour les entreprises.",
+      "keywords": [
+        "entreprise développement web Mali",
+        "développeurs application mobile Mali",
+        "création site web professionnel Mali",
+        "développement application web évolutive Mali",
+        "agence développement web Mali",
+        "création site e-commerce Mali",
+        "développement application startup Mali"
+      ]
+    },
+    "about": {
+      "title": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
+      "description": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
+      "keywords": [
+        "à propos 3SThreeI",
+        "entreprise informatique Mali",
+        "agence web Mali",
+        "équipe développeurs web Mali",
+        "design UI UX Mali"
+      ]
+    },
     "sitename": "3SThreeI"
   },
   "courses": {

@@ -30,7 +30,7 @@
 }
 
 .cta {
-    @apply w-fit px-8 py-3 border border-(--nav-text-color) text-(--nav-text-color) hover:text-white font-semibold rounded-lg hover:bg-(--nav-bg-color) transition-colors duration-300 shadow-lg hover:shadow-xl;
+    @apply w-full px-8 py-3 border border-(--nav-bg-color) hover:border-none text-(--nav-text-color) hover:text-white font-semibold rounded-lg hover:bg-gradient-to-r from-(--nav-bg-color) to-(--bg-color) transition-all duration-300 shadow-lg hover:shadow-xl;
 }
 
 .videoWrapper {
