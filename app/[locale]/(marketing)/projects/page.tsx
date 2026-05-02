@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
+import ProjectHero from "../../assets/projects/ProjectHero";
 
 type Props = {
     params: { locale: string };
@@ -25,6 +26,7 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
 export default function OurProjects() {
     return (
         <>
+        <ProjectHero />
         </>
     )
 }
