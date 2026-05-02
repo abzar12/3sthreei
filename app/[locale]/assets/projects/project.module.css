@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.heroContainer{
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-[#61DAFB] h-[50vh]
+}
