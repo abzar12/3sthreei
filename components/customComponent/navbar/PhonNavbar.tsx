@@ -4,7 +4,7 @@ import Link from "next/link"
 import { FaBars } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import { useState } from "react"
-export default function PhoneNavbar({home, course, project, about, faq, blog, signin}:any) {
+export default function PhoneNavbar({home, service, project, about, faq, blog, signin}:any) {
     // const t = useTranslations();
     const [is_active, setIs_active] = useState(false)
     const expand = () => {
@@ -16,7 +16,7 @@ export default function PhoneNavbar({home, course, project, about, faq, blog, si
             {
                 <ul className={`${style.PhoneNavlink} ${is_active && style.active}`}>
                     <li> <Link href='/'>{home}</Link></li>
-                    <li> <Link href='/courses'>{course}</Link></li>
+                    <li> <Link href='/service'>{service}</Link></li>
                     <li> <Link href='/projects'>{project}</Link></li>
                     <li> <Link href='/about'>{about}</Link></li>
                     <li> <Link href='/faq'>{faq}</Link></li>
