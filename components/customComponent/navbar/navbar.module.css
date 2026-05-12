@@ -21,44 +21,67 @@
 }
 
 .navlink .serviceItem {
-    @apply  max-w-[175px] py-2 rounded-lg hover:bg-gray-600 hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer text-center flex items-center justify-start gap-2
+    @apply max-w-[175px] py-2 rounded-lg hover:bg-gray-600 hover:scale-105 transition-all duration-200 ease-in-out cursor-pointer text-center flex items-center justify-start gap-2
 }
 
 .navlink .serviceLink {
     @apply text-white no-underline pl-1 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2
 }
- .li .icon {
+
+.li .icon {
     @apply text-[18px] mt-1 transition duration-300 ease-out
 }
- .li .icon.open{
-    margin-top:0px;
-    margin-bottom:2px;
+
+.li .icon.open {
+    margin-top: 0px;
+    margin-bottom: 2px;
     transform: rotate(180deg);
 }
 
-.PhoneNav {
-    @apply hidden flex
-}
+
 
 .button {
     @apply pt-3 text-center flex gap-5
 }
 
 /* -----------------phone view */
+.PhoneNav {
+    @apply hidden flex text-[1rem] text-left
+}
+
 .btnMenu {
-    @apply flex items-center justify-center text-xl cursor-pointer text-[var(--nav-text-color)] hover:opacity-80 transition duration-200 ease-in-out
+    @apply flex items-center justify-center z-50 text-xl cursor-pointer text-(--nav-text-color) hover:opacity-80 transition duration-200 ease-in-out
 }
 
-.PhoneNavlink {
-    @apply absolute z-50 top-15 left-0 right-0 text-[var(--nav-text-color)] font-bold bg-[var(--card-bg-color)] space-y-3 py-5 w-0 opacity-0 h-0 overflow-hidden transition duration-300 ease-in
+.PhoneNav .PhonenavCard {
+    @apply bg-[rgb(0,0,0,0.5)] z-auto h-0 opacity-0 overflow-hidden transition duration-500 ease-in w-full text-(--nav-text-color) absolute top-0 left-0;
+}
+.PhonenavCard.active{
+    @apply h-[100vh] opacity-100 z-0;
+    backdrop-filter: blur(2px);
+}
+.PhoneNav .PhonenavCard .li {
+    @apply flex relative
+}
+.PhonenavCard .PhoneNavlink {
+    @apply bg-(--nav-Phone-bg-color) z-50 min-w-[150px] max-w-[250px] h-full px-2 pl-7 pt-14 space-y-3
 }
 
-.PhoneNavlink li {
-    /* @apply  */
+.PhonenavCard .li .PhoneServiceDropdown {
+    @apply absolute -left-50 top-5 font-light text-[0.9rem] my-5 pointer-events-none opacity-0 w-0 h-0 overflow-hidden;
+    transition: all 0.5s ease-in-out;
 }
-
-.PhoneNavlink.active {
-    @apply h-auto opacity-100 w-full z-50
+.PhonenavCard .li .PhoneServiceDropdown.open{
+    @apply relative -left-10 opacity-100 transform translate-y-0 pointer-events-auto w-auto h-auto block overflow-visible
+}
+.PhonenavCard .li .PhoneServiceDropdown.open::before{
+    position:absolute;
+    content: "";
+    height: 100%;
+    width: 3px;
+    background-color: var(--nav-text-color);
+    left: -20px;
+    opacity: 30%;
 }
 
 @media(max-width:670px) {
@@ -67,6 +90,6 @@
     }
 
     .PhoneNav {
-        @apply block z-50
+        @apply block z-50;
     }
 }
