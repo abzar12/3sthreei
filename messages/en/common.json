@@ -46,7 +46,13 @@
     },
     "navbar": {
         "home": "Home",
-        "service": "services",
+        "keyservice": "services",
+        "servicesValue": [
+            "Web Development",
+            "Mobile App",
+            "Gaming",
+            "Web Design"
+        ],
         "project": "Projects",
         "signin": "Sign-in",
         "signup": "Sign Up",

@@ -1,13 +1,13 @@
 "use client"
 // import { getLocale } from "next-intl/server"
 import { useRouter } from "next/navigation";
-import "./switchLang.css"
+import style from "./switchLang.module.css"
 import { useEffect, useState } from "react";
 
 interface HeroProps {
     locale: string
 }
-function SwitchButtonTheme({ locale }: HeroProps) {
+function SwitchButtonLang({ locale }: HeroProps) {
     const [active, setActive] = useState(locale)
     const router = useRouter()
     const Switchlanguage = () => {
@@ -25,13 +25,13 @@ function SwitchButtonTheme({ locale }: HeroProps) {
     }
     return (
         <>
-            <div className="themeBtn" onClick={Switchlanguage}>
-                <div className={` btn ${active == 'fr' ? 'active ' : "disactive"}`}
+            <div className={style.themeBtn} onClick={Switchlanguage}>
+                <div className={` ${style.btn} ${active == 'fr' ? 'active ' : "disactive"}`}
                 >
-                    <span className="themeText">{locale === 'fr' ? 'En' : 'Fr'}</span>
+                    <span className={style.themeText}>{locale === 'fr' ? 'En' : 'Fr'}</span>
                 </div>
             </div>
         </>
     )
 }
-export default SwitchButtonTheme;
+export default SwitchButtonLang;
