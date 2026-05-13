@@ -54,25 +54,27 @@
 }
 
 .PhoneNav .PhonenavCard {
-    @apply bg-[rgb(0,0,0,0.5)] z-auto h-0 opacity-0 overflow-hidden transition duration-500 ease-in w-full text-(--nav-text-color) absolute top-0 left-0;
+    @apply bg-[rgb(0,0,0,0.5)] h-0 opacity-0 overflow-hidden transition duration-500 ease-in w-full text-(--nav-text-color) absolute top-0 left-0;
 }
 .PhonenavCard.active{
-    @apply h-[100vh] opacity-100 z-0;
-    backdrop-filter: blur(2px);
+    @apply h-[100vh] opacity-100 ;
+    backdrop-filter: blur(1px);
 }
 .PhoneNav .PhonenavCard .li {
     @apply flex relative
 }
 .PhonenavCard .PhoneNavlink {
-    @apply bg-(--nav-Phone-bg-color) z-50 min-w-[150px] max-w-[250px] h-full px-2 pl-7 pt-14 space-y-3
+    @apply cursor-pointer opacity-[3px] bg-(--nav-Phone-bg-color) min-w-[150px] max-w-[250px] h-full px-2 pl-7 pt-14 space-y-3;
+    z-index: 100;
 }
 
 .PhonenavCard .li .PhoneServiceDropdown {
-    @apply absolute -left-50 top-5 font-light text-[0.9rem] my-5 pointer-events-none opacity-0 w-0 h-0 overflow-hidden;
+    @apply absolute -left-30 bg-amber-300 top-5 font-light text-[0.9rem] my-5 pointer-events-none opacity-0 w-0 h-0 overflow-hidden;
     transition: all 0.5s ease-in-out;
 }
 .PhonenavCard .li .PhoneServiceDropdown.open{
-    @apply relative -left-10 opacity-100 transform translate-y-0 pointer-events-auto w-auto h-auto block overflow-visible
+    @apply relative -left-10 opacity-100 transform translate-y-0 pointer-events-auto w-full h-auto block overflow-visible
+    @apply relative -left-10 opacity-100 transform translate-y-0 pointer-events-auto w-full h-auto block overflow-visible
 }
 .PhonenavCard .li .PhoneServiceDropdown.open::before{
     position:absolute;
@@ -83,7 +85,9 @@
     left: -20px;
     opacity: 30%;
 }
-
+.PhoneServiceLink{
+    @apply flex gap-x-2 justify-start items-center
+}
 @media(max-width:670px) {
     .navlink {
         @apply hidden
