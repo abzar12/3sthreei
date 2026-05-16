@@ -25,9 +25,9 @@ export default function LargeScreenNavbar({ home, keyService, servicesValue, pro
                                     servicesValue.map((service, index) => {
                                         const icons = [<FaCode />, <FaMobileAlt />, <FaGamepad />, <FaPalette />];
                                         return (
-                                            <li key={service} className={style.serviceItem}>
-                                                <Link href='/projects' className={style.serviceLink}>
-                                                    {icons[index]} {service}
+                                            <li key={index} className={style.serviceItem}>
+                                                <Link href={service.url} className={style.serviceLink}>
+                                                    {icons[index]} {service.name}
                                                 </Link>
                                             </li>
                                         );
