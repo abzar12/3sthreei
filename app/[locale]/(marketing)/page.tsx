@@ -16,7 +16,7 @@ type Props = {
 
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'common' })
+  const t = await getTranslations({ locale, namespace: '' })
   return {
     title: t('home.title'),
     description: t('home.description'),
@@ -42,7 +42,6 @@ export async function generateMetadata(params: Promise<{ locale: any }>): Promis
 }
 
 export default async function MarketingPage() {
-  const t = await getTranslations('common')
   return (
     <main>
       <Hero />
