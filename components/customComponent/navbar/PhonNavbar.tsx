@@ -46,9 +46,9 @@ export default function PhoneNavbar({ home, keyService, servicesValue, project, 
                                         servicesValue.map((service, index) => {
                                             const icons = [<FaCode />, <FaMobileAlt />, <FaGamepad />, <FaPalette />];
                                             return (
-                                                <li key={service} className={style.PhoneserviceItem}>
-                                                    <Link href='/projects' className={style.PhoneServiceLink}>
-                                                        {icons[index]} {service}
+                                                <li key={index} className={style.PhoneserviceItem}>
+                                                    <Link href={service.url} className={style.PhoneServiceLink}>
+                                                        {icons[index]} {service.name}
                                                     </Link>
                                                 </li>
                                             );

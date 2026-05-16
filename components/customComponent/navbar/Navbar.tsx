@@ -11,10 +11,10 @@ export interface NavbarProps {
     home: string;
     keyService: string;
     servicesValue: [
-        web:string,
-        modbile: string,
-        gaming:string,
-        design:string
+        web:{name:string, url:string},
+        modbile:{name:string, url:string},
+        gaming:{name:string, url:string},
+        design:{name:string, url:string}
     ] ;
     project: string;
     about: string;
@@ -51,8 +51,6 @@ export default async function Navbar() {
                 {/* button to switch language  */}
                 <SwitchButtonLang locale={locale} />
                 <PhoneNavbar {...navData} />
-                {/* <div className="border h-5 w-14">
-                </div> */}
             </div>
         </nav>
     );
