@@ -28,14 +28,16 @@ interface ParamsProps {
     params: {locale:string}
 }
 export default async function Web({params}:ParamsProps) {
-    const {locale} =await params
-    const message = ( await import(`@/messages/${locale}/services/web.json`)).default
-    const t = message.webHero
+    const {locale} = await params
+    const message = { 
+        ...(await import(`@/messages/${locale}/common.json`)).default
+        ...(await import(`@/messages/${locale}/services/web.json`)).default
+        }
     return (
         <>
         <NextIntlClientProvider locale={locale} messages={message}>
             <section>
-                <ServicesHero title={t.title} Planguage={t.headtitle} />
+                <ServicesHero />
             </section>
             <section>
                 <WorkingFlow />
