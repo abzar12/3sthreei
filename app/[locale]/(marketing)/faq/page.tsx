@@ -7,15 +7,16 @@ interface Props {
 }
 export async function generateMetadata(params: Promise<Props>): Promise<Metadata> {
     const { locale } = await params
-    const t = await getTranslations({ locale, namespace: "common" })
+    const t = await getTranslations({ locale, namespace: "faq" })
+    const sitename = await getTranslations("sitename") as any
     return {
-        title: t('faq.title'),
-        description: t("faq.description"),
-        keywords: t.raw("faq.keywords").join(', '),
+        title: t('title'),
+        description: t("description"),
+        keywords: t.raw("keywords").join(', '),
         openGraph: {
-            title: t('faq.title'),
-            description: t("faq.description"),
-            siteName: t('sitename'),
+            title: t('title'),
+            description: t("description"),
+            siteName: sitename,
             url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/faq`
         },
         alternates: {
