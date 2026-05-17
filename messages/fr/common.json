@@ -1,52 +1,79 @@
 {
-  "common": {
-    "home": {
-      "title1": "Entreprise de développement Web & Mobile au Mali | 3SThreeI",
-      "title": "Développement Web, Apps, Gaming & Design Mali Ghana",
-      "description1": "3SThreeI est une entreprise de développement web et mobile au Mali qui crée des sites web sur mesure, des applications évolutives, des solutions logicielles et un design UI/UX intuitif pour les entreprises.",
-      "description": "Leader en développement web, applications mobiles, jeux & design UI/UX au Mali et Ghana. Solutions sur mesure pour entreprises — rapides, abordables, mobile-first. Devis gratuit !",
-      "keywords": [
-        "entreprise développement web Mali",
-        "développeurs application mobile Mali",
-        "création site web professionnel Mali",
-        "développement application web évolutive Mali",
-        "agence développement web Mali",
-        "création site e-commerce Mali",
-        "développement application startup Mali"
-      ]
-    },
-    "about": {
-      "title1": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
-      "title": "À Propos 3SThreeI | Experts Web & Apps Mali Ghana",
-      "description1": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
-      "description": "Découvrez 3SThreeI — agence web, mobile, gaming & design basée au Ghana servant le Mali. +5 ans d'expérience en solutions digitales scalables. Notre histoire !",
-      "keywords": [
-        "à propos 3SThreeI",
-        "entreprise informatique Mali",
-        "agence web Mali",
-        "équipe développeurs web Mali",
-        "design UI UX Mali"
-      ]
-    },
-    "project": {
-      "title1": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
-      "title": "Projets 3SThreeI | Web, Apps, Jeux Mali Ghana",
-      "description1": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
-      "description": "Découvrez notre portfolio : sites web, apps mobiles, jeux & designs UI pour clients Mali/Ghana. Études de cas, technologies, résultats. Nouveaux projets bienvenus !",
-      "keywords": [
-        "à propos 3SThreeI",
-        "entreprise informatique Mali",
-        "agence web Mali",
-        "équipe développeurs web Mali",
-        "design UI UX Mali"
-      ]
-    },
-    "faq": {
-      "title": "FAQ 3SThreeI | Coûts Web, Délais Mali Ghana",
-      "description": "Réponses 3SThreeI : coûts développement web/apps, délais, processus au Mali & Ghana. Tarifs, technologies, SEO expliqués. Posez-nous votre question !",
-      "keywords": []
-    },
-    "sitename": "3SThreeI"
+  "sitename": "3SThreeI",
+  "navbar": {
+    "home": "Accueil",
+    "keyservice": "services",
+    "servicesValue": [
+      {
+        "name": "Dévélopment Web ",
+        "url": "/services/web"
+      },
+      {
+        "name": "Application mobiles",
+        "url": "/services/application"
+      },
+      {
+        "name": "Jeux video",
+        "url": "/services/gaming"
+      },
+      {
+        "name": "Design UI/UX",
+        "url": "/services/design"
+      }
+    ],
+    "project": "Projets",
+    "signin": "Connexion",
+    "signup": "S'inscrire",
+    "contact": "Contact",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "about": "À propos"
+  },
+  "home": {
+    "title1": "Entreprise de développement Web & Mobile au Mali | 3SThreeI",
+    "title": "Développement Web, Apps, Gaming & Design Mali Ghana",
+    "description1": "3SThreeI est une entreprise de développement web et mobile au Mali qui crée des sites web sur mesure, des applications évolutives, des solutions logicielles et un design UI/UX intuitif pour les entreprises.",
+    "description": "Leader en développement web, applications mobiles, jeux & design UI/UX au Mali et Ghana. Solutions sur mesure pour entreprises — rapides, abordables, mobile-first. Devis gratuit !",
+    "keywords": [
+      "entreprise développement web Mali",
+      "développeurs application mobile Mali",
+      "création site web professionnel Mali",
+      "développement application web évolutive Mali",
+      "agence développement web Mali",
+      "création site e-commerce Mali",
+      "développement application startup Mali"
+    ]
+  },
+  "about": {
+    "title1": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
+    "title": "À Propos 3SThreeI | Experts Web & Apps Mali Ghana",
+    "description1": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
+    "description": "Découvrez 3SThreeI — agence web, mobile, gaming & design basée au Ghana servant le Mali. +5 ans d'expérience en solutions digitales scalables. Notre histoire !",
+    "keywords": [
+      "à propos 3SThreeI",
+      "entreprise informatique Mali",
+      "agence web Mali",
+      "équipe développeurs web Mali",
+      "design UI UX Mali"
+    ]
+  },
+  "project": {
+    "title1": "À propos de 3SThreeI | Entreprise de développement Web & Mobile à Mali",
+    "title": "Projets 3SThreeI | Web, Apps, Jeux Mali Ghana",
+    "description1": "Découvrez 3SThreeI au Mali, une équipe de développeurs et designers qui conçoivent des sites web modernes, des applications web et mobiles, et des solutions UI/UX pour les entreprises.",
+    "description": "Découvrez notre portfolio : sites web, apps mobiles, jeux & designs UI pour clients Mali/Ghana. Études de cas, technologies, résultats. Nouveaux projets bienvenus !",
+    "keywords": [
+      "à propos 3SThreeI",
+      "entreprise informatique Mali",
+      "agence web Mali",
+      "équipe développeurs web Mali",
+      "design UI UX Mali"
+    ]
+  },
+  "faq": {
+    "title": "FAQ 3SThreeI | Coûts Web, Délais Mali Ghana",
+    "description": "Réponses 3SThreeI : coûts développement web/apps, délais, processus au Mali & Ghana. Tarifs, technologies, SEO expliqués. Posez-nous votre question !",
+    "keywords": []
   },
   "courses": {
     "title": "Cours",
@@ -58,21 +85,26 @@
       "cours développement web"
     ]
   },
-  "navbar": {
-    "home": "Accueil",
-    "keyservice": "services",
-    "servicesValue": [
-      "Web Development",
-      "Mobile App",
-      "Gaming",
-      "Web Design"
-    ],
-    "project": "Projets",
-    "signin": "Connexion",
-    "signup": "S'inscrire",
-    "contact": "Contact",
-    "blog": "Blog",
-    "faq": "FAQ",
-    "about": "À propos"
+  "services": {
+    "web": {
+      "title": "",
+      "description": "",
+      "keywords": []
+    },
+    "application": {
+      "title": "",
+      "description": "",
+      "keywords": []
+    },
+    "game": {
+      "title": "",
+      "description": "",
+      "keywords": []
+    },
+    "design": {
+      "title": "",
+      "description": "",
+      "keywords": []
+    }
   }
 }
