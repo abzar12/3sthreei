@@ -9,20 +9,21 @@ interface Props {
 }
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
     const { locale } = await params
-    const t = await getTranslations({ locale, namespace: "common" })
+    const t = await getTranslations({ locale, namespace: "about" })
+    const sitename = await getTranslations("sitename") as any
     return {
-        title: t("about.title"),
-        description: t('about.description'),
-        keywords: t.raw('about.keywords').join(', '),
+        title: t("title"),
+        description: t('description'),
+        keywords: t.raw('keywords').join(', '),
         openGraph: {
-            title: t("about.title"),
-            description: t('about.description'),
-            siteName: t('sitename'),
+            title: t("title"),
+            description: t('description'),
+            siteName: sitename,
             url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/about`
         },
         alternates: {
-            canonical: `/${locale}/about`
-        }
+            canonical: `/${locale}/about`,
+        },
     }
 }
 export default async function AboutUS({ params }: Props) {
