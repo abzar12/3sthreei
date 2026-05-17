@@ -3,10 +3,10 @@ import { getLocale } from "next-intl/server"
 import style from "./workingPricing.module.css"
 import { FaCircleCheck } from "react-icons/fa6"
 import { useEffect, useState } from "react"
-export default async function WorkingFlowCard() {
-    const locale =await getLocale();
+import { useTranslations } from "next-intl"
+export default function WorkingFlowCard() {
+    const t = useTranslations()
     const [cardActive, SetCardActive] = useState('interactive')
-    const t = (await import(`@/messages/${locale}/common.json`)).default
     const SwitchCard = (value: string) => {
         SetCardActive(value)
     }
