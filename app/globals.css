@@ -26,6 +26,7 @@
   /* background color*/
   --card-bg-color: rgb(30, 41, 59);
   --card-bg-color-deep: rgb(8, 47, 73);
+  --transparent-black:rgb(0,0,0,0.5);
   /* card color*/
 }
 
@@ -39,10 +40,11 @@
   --text-color: rgb(255, 255, 255);
   /* text color*/
   --bg-color: rgb(17, 24, 39);
-  --nav-Phone-bg-color: rgb(30, 41, 68);
+  --nav-Phone-bg-color: rgb(30,41,59);
   /* background color*/
   --card-bg-color: rgb(30, 41, 59);
   --card-bg-color-deep: rgba(255, 255, 255, 0.188);
+  --transparent-black:rgb(0,0,0,0.5);
   /* card color*/
 }
 
