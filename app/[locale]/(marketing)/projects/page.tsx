@@ -9,15 +9,16 @@ type Props = {
 }
 export async function generateMetadata(params: Promise<{ locale: any }>): Promise<Metadata> {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: "common" })
+    const t = await getTranslations({ locale, namespace: "project" })
+    const sitename = await getTranslations("sitename") as any
     return {
-        title: t('project.title'),
-        description: t('project.description'),
-        keywords: t.raw('project.keywords').join(', '),
+        title: t('title'),
+        description: t('description'),
+        keywords: t.raw('keywords').join(', '),
         openGraph: {
-            title: t('project.title'),
-            description: t('project.description'),
-            siteName: t('sitename'),
+            title: t('title'),
+            description: t('description'),
+            siteName: sitename,
             url: `${process.env.NEXT_PUBLIC_SITE_URL}/${locale}/projects`
         },
         alternates: {
